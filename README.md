@@ -13,6 +13,9 @@ pip install PyMuPDF Pillow opencv-python numpy paddlepaddle paddleocr
 
 ## 模式一：OCR 智能切分
 
+<img width="1104" height="827" alt="image" src="https://github.com/user-attachments/assets/af70b580-cdc5-436a-b6e7-db890d4496b3" />
+
+
 对扫描件 PDF 进行自动拆分。工具使用 PaddleOCR 识别每页顶部 25% 区域的文字，当命中用户预设的关键字时执行切分。
 
 **操作步骤：** 加载 PDF → 设置输出目录 → 输入关键字（每行一个）→ 点击启动
@@ -20,6 +23,9 @@ pip install PyMuPDF Pillow opencv-python numpy paddlepaddle paddleocr
 **分组命名规则：** 输出文件按 `线路N-关键字.pdf` 命名。当某个关键字在同一组内重复出现时，线路编号自动递增，实现按组归类。
 
 ## 模式二：手动预览切割
+
+<img width="1104" height="827" alt="image" src="https://github.com/user-attachments/assets/47aae6de-7678-4815-bea5-6332b2eb2479" />
+
 
 左侧预览 PDF 页面，右侧手动指定页码范围进行切割。
 
